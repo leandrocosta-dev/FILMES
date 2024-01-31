@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #023047;
+    --light-primary: #8ECAE6;
+    --lightest-color: #92b0b6;
+    --secondary-color: #219EBC;
+    --light-secondary: #FFB703;
+}
+
+#modal-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal-background {
+    background-color: var(--lightest-color);
+    width: 100vw;
+    height: 100dvh;
+    position: absolute;
+    opacity: 0.4;
+}
+
+#modal-container {
+    z-index: 1;
+    background-color: var(--lightest-color);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+
+#modal-body {
+    display: flex;
+}
+
+#movie-title {
+    padding: 1rem 0 1rem;
+}
+
+#movie-poster {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2rem;
+    max-width: 300px;
+}
+
+#add-to-list {
+    margin-top: 10px;
+    padding: 0.3rem 0;
+    border: 3px solid var(--primary-color);
+    background-color: var(--light-secondary);
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+#add-to-list:focus,
+#add-to-list:hover {
+    background-color: #023047;
+    color: var(--light-secondary);
+    border: 3px solid #FFB703;
+    box-shadow: 10px 10px 10ox #000;
+}
+

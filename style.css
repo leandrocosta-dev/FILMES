@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #023047;
+    --light-primary: #8ECAE6;
+    --lightest-color: #FB8500;
+    --secondary-color: #219EBC;
+    --light-secondary: #FFB703;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-secondary);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+#search-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+header >h1 > i{
+    margin-right: 1rem;
+}
+.movie-name-wrapper{
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.movie-year-wrapper{
+    /*width: 30%;*/
+    display: flex;
+    align-items: center;
+}
+
+button{
+    width: 5%;
+    all: unset;
+    cursor: pointer;
+}
+
+.movie-year-wrapper > input{
+    max-width: 5rem;
+}
+
+.movie-name-wrapper > input{
+    width: 100%;
+}
+
+.movie-name-wrapper > input, .movie-year-wrapper > input{
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    padding: 0.3rem 0.2rem;
+    font-weight: bold;
+}
+
+.movie-name-wrapper > label, .movie-year-wrapper > label{
+    font-weight: bold;
+}
+
+#search-button{
+    width: 20px;
+    padding: 0.3rem;
+    border: 2px solid var(--lightest-color);
+    border-radius: 10px;
+}
+
+#search-button:focus, #search-button: :hover{
+    background-color: var(--lightest-color);
+}
+
+main{
+    box-sizing: content-box;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #8ECAE6;
+    flex-grow: 1;
+}
+
+#movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+#movie-list article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#movie-list article > img{
+    border-radius: 29px;
+    margin-bottom: 0.5rem;
+}
+
+.remove-button{
+    background-color: var(--lightest-color);
+    border: 3px solid var(--primary-color);
+    padding: 1ch;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px var(--primary-color);
+    color: #000;
+}
+
+.remove-button :focus, .remove-button:hover{
+    background-color: var(--primary-color);
+    color: var(--lightest-color);
+}
