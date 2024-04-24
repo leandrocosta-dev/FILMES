@@ -1,15 +1,23 @@
-<h1 align="center"> Lista de Filmes </h1>
+# App MovieList
 
-Se você é apaixonado por filmes assim como eu, sabe que não há nada mais chato do que esquecer o nome de um filme que você queria assistir.
+## Descrição
+Este é um projeto destinado a todos os amantes de cinema que desejam manter uma lista organizada de filmes que querem assistir. Com o MovieList Tracker, você nunca mais vai esquecer o nome de um filme que alguém recomendou ou que você descobriu enquanto navegava pela internet. Leve sua lista de filmes favoritos para qualquer lugar e mantenha-a sempre atualizada!
 
-Esse projeto tem como finalidade justamente eliminar esse problema, afinal, você poderá carregar a sua lista de filmes favoritos para todos os lugares.
+## Funcionalidades
+- **Adicionar Filmes:** Facilmente adicione novos filmes à sua lista.
+- **Visualizar Lista:** Veja todos os filmes que você adicionou em uma interface limpa e organizada.
+- **Marcar como Assistido:** Marque filmes que você já assistiu.
+- **Remover Filmes:** Remova filmes da lista quando desejar.
 
-Desenvolvi esse projeto com base nos estudos de HTML, CSS e JavaScript.
+## Tecnologias Utilizadas
+- **HTML:** Estrutura da página web.
+- **CSS:** Estilização para tornar a interface visualmente agradável.
+- **JavaScript:** Funcionalidades interativas para adicionar, remover e marcar filmes como assistidos.
+
+## Como Executar
+Para acessar e usar o MovieList Tracker, siga os passos abaixo:
 
 
-
-
-#
 ## API OMDb
 
 #### REFERENCIA: https://www.omdbapi.com/
@@ -46,3 +54,7 @@ Para as notificações utilizei os recursos da biblioteca notie.js para tornar m
 - Salva os dados da lista de filmes.
 
 ### Para maiores detalhes, estou a disposição!
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/leandrocosta-dev/FILMES
